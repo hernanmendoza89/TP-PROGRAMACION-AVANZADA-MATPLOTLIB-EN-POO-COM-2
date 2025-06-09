@@ -19,13 +19,13 @@
   3. Reducir la dependencia del personal administrativo.  
   4. Asegurar la integridad y consistencia de los datos.
 
-## 3. Programación Orientada a Objetos (OOP)
+## 3. Programación Orientada a Objetos (POO)
 
 ### Clases y Objetos
-- Se definen distintas clases para representar entidades del sistema. Por ejemplo:
+- Se definen distintas clases para representar entidades del sistema.
   - **Producto:** Clase base que contiene atributos comunes (código, nombre, precio y stock).
   - **Prenda:** Hereda de Producto y agrega atributos específicos (talla y color).
-  - Clases derivadas de Prenda como **Pantalón**, **Camisa**, **Tapado** y **Remera**, que especializan la información agregando atributos (por ejemplo, tipo, manga o largo).
+  - Clases derivadas de Prenda como **Pantalón**, **Camisa**, **Tapado** y **Remera**, 
 
 ### Herencia
 - Se utiliza para crear una jerarquía de clases. Las clases hijas reutilizan los atributos y métodos de la clase padre y, a la vez, pueden extender o sobreescribir la funcionalidad. Esto permite organizar el código y evitar redundancias.
@@ -36,14 +36,13 @@
 ### Encapsulamiento
 - Los datos propios de cada objeto (atributos) se gestionan internamente dentro de sus clases. Esto protege la integridad de la información y establece interfaces claras a través de métodos como `mostrar_informacion()`.
 
-### Uso de `super()`
+### Uso de super()
 - Se utiliza para llamar al constructor y métodos de la superclase, facilitando la reutilización del código y la extensión de funcionalidades en las clases derivadas.
 
-## 4. Generación y Manipulación de Datos Aleatorios
+## 4. Generación de Datos Aleatorios
 
 ### Uso de la librería `random`
 - Se emplean funciones como `random.choice`, `random.randint` y `random.choices` para seleccionar elementos o generar números de forma aleatoria.
-- **Ejemplo:** Seleccionar tallas y colores utilizando pesos que determinan la probabilidad de cada opción.
 
 ### Generación de fechas aleatorias
 - La función `fecha_aleatoria()` utiliza el módulo `datetime` junto con `timedelta` para generar fechas aleatorias dentro de un intervalo definido. Esto permite simular ventas en distintas fechas.
@@ -65,7 +64,7 @@
 ### Gráfico de Barras
 - Se utiliza para representar las ventas agrupadas por tallas. Se construye un diccionario que acumula la cantidad vendida para cada talla y se grafica con barras.
 
-### Gráfico de Torta (Pie Chart)
+### Gráfico de Torta
 - Permite visualizar la distribución de ventas por color de las prendas. Se personaliza el gráfico resaltando ciertos sectores (por ejemplo, la porción correspondiente al color "Blanco") y se ajustan los colores de etiquetas y porcentajes.
 
 ### Gráfico de Línea
